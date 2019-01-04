@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baidu.com</title>
+</head>
+<style>
+    #u1 {
+        z-index: 2;
+        color: black;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 19px 0 5px;
+        padding: 0 96px 0 0;}
+    .u2 {
+        float: left;
+        color: #333;
+        font-weight: 700;
+        line-height: 24px;
+        margin-left: 20px;
+        font-size: 13px;
+        text-decoration: underline;}
+    .gengduo{
+        position: absolute;
+        right: 10px;
+        width: 60px;
+        height: 23px;
+        font-size: 13px;
+        background: #38f;
+        color:white;
+        text-align: center;
+        line-height: 24px;
+    }
+    .hidden{
+        display: none;
+        width: 60px;
+        height: 23px;
+        position: absolute;
+        right: 0px;
+        top:35px;
+    }
+    #log{
+        position: relative;
+        top: 40px;
+        text-align: center;
+    }
+    .searchdiv{
+        text-align: center;
+    }
+    .search{
+        width: 539px;
+        height: 34px;
+    }
+    .searchbutton{
+        width: 100px;
+        height: 36px;
+        background: #3385ff;
+        color: white;
+        font-size: 15px;
+        border: 0px;
+        padding: 0px;
+    }
+</style>
+<script>
+    function fun1() {
+        document.getElementById("hi").style.display="block";
+    }
+    function fun2() {
+        document.getElementById("hi").style.display="none";
+    }
+</script>
+<body>
+    <div id ="u1">
+        <a class = "u2" href="http://news.baidu.com/" >新闻  </a>
+        <a class = "u2" href="http://www.hao123.com/">hao123  </a>
+        <a class = "u2" href="http://map.baidu.com/">地图  </a>
+        <a class = "u2" href="http://v.baidu.com/">视频  </a>
+        <a class = "u2" href="http://tieba.baidu.com/">贴吧  </a>
+        <a class = "u2" href="http://xueshu.baidu.com/">学术  </a>
+        <a class = "u2" href="">登陆  </a>
+        <a class = "u2" href="">设置  </a>
+        <span class = "gengduo" onmouseover="fun1()" onmouseout="fun2()">更多产品</span>
+    </div>
+    <div id="hi" class="hidden">
+        <p>糯米</p>
+        <p>音乐</p>
+        <p>图片</p>
+        <p>知道</p>
+        <p>文库</p>
+        <p>风云榜</p>
+    </div>
+    <div class="searchdiv">
+        <img id ="log" src="1.gif" width="270" height="129">
+        <br>
+        <form style="margin: 22px;">
+            <input class="search" type="search">
+            <input class="searchbutton" type="submit" value="百度一下">
+        </form>
+
+    </div>
+
+
+</body>
+</html>
